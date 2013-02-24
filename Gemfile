@@ -39,12 +39,12 @@ group :test do
 	gem 'spork', '0.9.0'
 	gem 'factory_girl_rails', '1.4.0'
 	#windows test gems
-	#gem 'rb-fchange', '0.0.5'
-	#gem 'rb-notifu', '0.0.4'
-	#gem 'win32console', '1.3.2'
+	gem 'rb-fchange', '0.0.5'
+	gem 'rb-notifu', '0.0.4'
+	gem 'win32console', '1.3.2'
 	#linux test gems
-	gem 'rb-inotify', '0.8.8'
-	gem 'libnotify', '0.5.9'
+	#gem 'rb-inotify', '0.8.8'
+	#gem 'libnotify', '0.5.9'
 
 end
 
