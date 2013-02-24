@@ -18,7 +18,7 @@ require 'spec_helper'
 			end
 			it "should render the user's feed" do
 				user.feed.each do |item|
-					page.should have_selector("li##{item.id}}", text: item.content)
+					page.should have_selector("li##{item.id}", text: item.content)
 				end
 			end
 		end

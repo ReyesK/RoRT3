@@ -6,7 +6,7 @@ describe "Micropost pages" do
 	before { sign_in user }
 
 	describe "micropost creation" do 
-		before { visit_root_path }
+		before { visit root_path }
 		describe "with invalid information" do
 			it "should not create a mircopost" do 
 				expect { click_button "Post" }.should_not change(Micropost, :count)
@@ -28,7 +28,7 @@ describe "Micropost pages" do
 		before { FactoryGirl.create(:micropost, user: user) }
 
 		describe "as correct user" do 
-			before { visit_root_path }
+			before { visit root_path }
 			it "should delete a micropost" do
 				expect { click_link "delete" }.should change(Micropost, :count).by(-1)
 			end
